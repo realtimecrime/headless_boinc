@@ -7,7 +7,9 @@ echo
 boinccmd --join_acct_mgr https://www.grcpool.com jonenone $password
 boinccmd --set_run_mode always
 boinccmd --set_network_mode always
-cp -f global_prefs_override.xml /etc/boinc-client/global_prefs_override.xml
+sudo cp -f global_prefs_override.xml /etc/boinc-client/global_prefs_override.xml
 boinccmd --read_global_prefs_override
 
+
+chmod 700 restart_boinc.sh
 nohup ./restart_boinc.sh >log.out &
