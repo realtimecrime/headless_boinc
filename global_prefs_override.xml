@@ -1,0 +1,6 @@
+<global_preferences>
+   <cpu_usage_limit>100.00</cpu_usage_limit>
+  <suspend_if_no_recent_input></suspend_if_no_recent_input>
+  <run_if_user_active/>
+  <suspend_cpu_usage>90.00</suspend_cpu_usage>
+</global_preferences>
