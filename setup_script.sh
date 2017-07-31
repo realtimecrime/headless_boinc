@@ -10,6 +10,8 @@ echo
 # Run Command
 boinccmd --join_acct_mgr https://www.grcpool.com jonenone $password
 #echo Account manager added
+boinccmd --set_run_mode always
+boinccmd --set_network_mode always
 
 # download restart_script
 nohup ./restart_script.sh >log.out &
